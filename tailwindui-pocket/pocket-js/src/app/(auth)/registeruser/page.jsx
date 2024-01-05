@@ -11,9 +11,9 @@ import useAuthentication from '@/hooks/useAuthentication';
 import { Header } from '@/components/Header';
 import { useRouter } from 'next/navigation';
 
-export const metadata = {
-  title: 'Registrar',
-};
+// export const metadata = {
+//   title: 'Registrar',
+// };
 
 export default function RegisterUser() {
   const [formData, setFormData] = useState({

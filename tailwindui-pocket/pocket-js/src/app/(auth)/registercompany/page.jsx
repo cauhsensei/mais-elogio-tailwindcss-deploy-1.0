@@ -11,9 +11,9 @@ import { collection, getDocs } from 'firebase/firestore';
 import { db } from '@/firebase/firebaseConfig';
 import { useRouter } from 'next/navigation';
 
-export const metadata = {
-  title: 'Registrar',
-};
+// export const metadata = {
+//   title: 'Registrar',
+// };
 
 export default function RegisterCompany() {
   const [formData, setFormData] = useState({
