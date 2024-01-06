@@ -125,7 +125,8 @@ export function Searchbar() {
                           <div className="text-xs text-gray-500">{company.company_cnpj}</div>
                         </div>
                       </div>
-                  
+                  // teste
+
                   ))}
                 </div>
               </div>
