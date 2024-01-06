@@ -87,7 +87,7 @@ export function Searchbar() {
             <input
               id="search"
               name="search"
-              className="block w-full rounded-md border bg-white py-2 pl-10 pr-3 text-gray-900 placeholder:text-gray-500 focus:ring-2 focus:ring-indigo-600 sm:text-sm"
+              className="block w-full rounded-md border-gray-200 bg-white py-2 pl-10 pr-3 text-gray-900 placeholder:text-gray-500 focus:ring-2 focus:ring-indigo-600 sm:text-sm"
               placeholder="Pesquise por empresa, CNPJ ou site"
               type="search"
               autoComplete="off"
