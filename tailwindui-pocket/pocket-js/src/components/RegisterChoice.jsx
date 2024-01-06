@@ -37,20 +37,21 @@ export default function RegisterChoice() {
     <div className="isolate bg-gray-900">
       <div className="mx-auto max-w-7xl px-6 pb-96 text-center sm:pt-8 lg:px-8">
         <div className="mx-auto max-w-4xl">
-          <p className="mt-2 text-sm font-bold tracking-tight text-white sm:text-5xl">
-            Escolha como deseja se cadastrar{' '}
+          <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-5xl">
+            Escolha como deseja se cadastrar
             <br className="hidden sm:inline lg:hidden" />
           </p>
         </div>
         <div className="relative mt-6">
-          <p className="mx-auto max-w-2xl text-lg leading-8 text-white/60">
+          <p className="mx-auto max-w-2xl text-lg leading-8 text-white/80">
             Registre-se como usuário para elogiar serviços ou como empresa para
             receber elogios, feedback e gerenciar a qualidade do serviço
             prestado.
           </p>
+          <div className="overflow-hidden">
           <svg
             viewBox="0 0 1208 768"
-            className="absolute -top-10 left-1/2 -z-10 h-[48rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:-top-12 md:-top-20 lg:-top-12 xl:top-0"
+            className="absolute -top-10 left-1/2 -z-10 h-[16rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:-top-12 md:-top-20 lg:-top-12 xl:top-0"
           >
             <ellipse
               cx={604}
@@ -66,6 +67,7 @@ export default function RegisterChoice() {
               </radialGradient>
             </defs>
           </svg>
+          </div>
         </div>
       </div>
       <div className="flow-root bg-white pb-24 sm:pb-32">
@@ -108,7 +110,7 @@ export default function RegisterChoice() {
                     aria-describedby={tier.id}
                     className="mt-8 block rounded-md bg-indigo-600 px-3.5 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
-                     Escolha esta opção
+                    Escolha esta opção
                   </a>
                 </div>
               ))}

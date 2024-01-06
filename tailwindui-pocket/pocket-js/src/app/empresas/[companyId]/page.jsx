@@ -36,6 +36,7 @@ import {
 import { Header } from '@/components/Header'
 import Image from 'next/image'
 import { useCallback } from 'react'
+import { Searchbar } from '@/components/Searchbar'
 
 function CompanyPage() {
   const [activeTab, setActiveTab] = useState('Últimos elogios')
@@ -176,9 +177,10 @@ function CompanyPage() {
 
   return (
     <>
+    <Searchbar />
     <Header />
     <main className="profile-page ">
-      <section className="relative block" style={{ height: '500px' }}>
+      <section className="relative block" style={{ height: '400px' }}>
         <div
           className="absolute top-0 h-full w-full bg-cover bg-center"
           style={{
@@ -297,7 +299,7 @@ function CompanyPage() {
                         className="mb-1 rounded bg-indigo-600 px-4 py-2 text-xs font-bold uppercase text-white shadow outline-none transition-all duration-150 ease-linear hover:bg-indigo-500 hover:shadow-md focus:outline-none sm:mr-2 sm:text-sm lg:text-base"
                         type="button"
                       >
-                        ELOGIAR ESTÁ EMPRESA
+                        Elogie
                       </button>
                     </div>
                   </div>

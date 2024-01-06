@@ -75,7 +75,7 @@ export function Searchbar() {
 
   return (
       <div ref={searchRef}>
-      <div className="relative z-0 flex justify-center px-4 py-2 border-b">
+      <div className="relative flex justify-center px-4 py-2 border-b">
         <div className="w-full max-w-md">
           <label htmlFor="search" className="sr-only">
             Search
@@ -106,7 +106,7 @@ export function Searchbar() {
           <div className="bg-white shadow-lg">
             {/* Título para as sugestões de empresas */}
             <h3 className="text-center font-semibold py-4">Confira as empresas mais pesquisadas</h3>
-            <div className="flex overflow-x-auto space-x-4 p-4 justify-center">
+            <div className="flex overflow-x-auto space-x-4 p-8 justify-center">
               {/* Adiciona padding nas laterais para centralizar os cards */}
               <div className="w-full max-w-4xl px-8">
                 <div className="flex space-x-4">

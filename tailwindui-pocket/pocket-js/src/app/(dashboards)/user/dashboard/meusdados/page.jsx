@@ -1,6 +1,6 @@
 import DadosConsumidor from '@/components/dashboarduser/DadosConsumidor'
 
-export default function MeusComentarios() {
+export default function MeusDados() {
   return (
     <>
       <div>

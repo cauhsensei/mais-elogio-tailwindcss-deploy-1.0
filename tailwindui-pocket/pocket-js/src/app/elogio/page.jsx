@@ -15,6 +15,7 @@ import { onAuthStateChanged } from 'firebase/auth';
 import { serverTimestamp } from 'firebase/firestore';
 import { Header } from '@/components/Header';
 import Image from 'next/image';
+import { Searchbar } from '@/components/Searchbar';
 
 const StepComponent = ({ currentStep, stepsCompleted }) => {
   const steps = [
@@ -24,6 +25,7 @@ const StepComponent = ({ currentStep, stepsCompleted }) => {
   ];
 
   return (
+    <>
     <nav aria-label="Progress">
       <ol role="list" className="divide-y divide-gray-300 rounded-md border border-gray-300 md:flex md:divide-y-0">
         {steps.map((step, stepIdx) => (
@@ -67,6 +69,7 @@ const StepComponent = ({ currentStep, stepsCompleted }) => {
         ))}
       </ol>
     </nav>
+    </>
   );
 };
 

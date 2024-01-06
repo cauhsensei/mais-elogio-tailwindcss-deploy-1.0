@@ -90,7 +90,8 @@ export default function DadosConsumidor() {
   };
 
   return (
-    <form className='px-4 sm:px-6 lg:px-8' onSubmit={handleSubmit}>
+      <div className="w-3/4 max-h-[500px] overflow-auto mt-6 ml-16"> {/* Container do formulário com largura e altura máxima */}
+        <form className='px-4 sm:px-6 lg:px-8' onSubmit={handleSubmit}>
       <div className="space-y-12">
         <div className="border-b border-gray-900/10 pb-12">
           <h2 className="text-base font-semibold leading-7 text-gray-900">Informações Pessoais</h2>
@@ -284,5 +285,7 @@ export default function DadosConsumidor() {
         </div>
       </div>
     </form>
+    </div>
+
   );
 }
