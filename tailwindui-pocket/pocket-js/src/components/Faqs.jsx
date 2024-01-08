@@ -37,19 +37,19 @@ const faqs = [
   ],
   [
     {
-      question: 'How did you get this on the App Store?',
+      question: 'Como o site protege dados sensíveis dos usuários?',
       answer:
-        'Honestly we were surprised too, but eventually we found out that the app reviewer found the app so compelling they approved it just so they could use it themselves.',
+        'Utilizamos criptografia avançada para garantir total confidencialidade e prevenir acesso não autorizado.',
     },
     {
-      question: 'How do I explain the money I withdraw from Pocket to the IRS?',
+      question: 'Qual a abordagem legal e segura na integração com a API da Receita Federal?',
       answer:
-        'This feels like one-hundred percent a you problem. Pocket is not responsible in any way for your tax returns.',
+        'Mantemos integração legal e segura, seguindo normativas e criptografando dados para total conformidade.',
     },
     {
-      question: 'How do I become an insider?',
+      question: 'Quais protocolos de segurança são adotados durante operações no site?',
       answer:
-        'Contact us with some details about your industry and the type of access you have to apply for an insider account. Once approved, we’ll send you a guide on collecting insider information without being detected at work.',
+        'Adotamos protocolos robustos, como criptografia de ponta a ponta, para garantir operações seguras e conformidade com regulamentações.',
     },
   ],
 ]

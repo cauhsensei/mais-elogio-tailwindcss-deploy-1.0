@@ -314,10 +314,20 @@ export function Header() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           {!user && (
             <a
-              href="/choices"
+              href="/login"
               className="text-sm font-semibold leading-6 text-gray-900"
             >
               Faça login <span aria-hidden="true">&rarr;</span>
+            </a>
+          )}
+        </div>
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+          {!user && (
+            <a
+              href="/choices"
+              className="-mx-3 rounded-lg px-3 py-2.5 text-sm font-semibold leading-6 text-gray-100 bg-indigo-600"
+            >
+              Registre-se 
             </a>
           )}
         </div>
@@ -412,10 +422,20 @@ export function Header() {
               <div className="py-6">
                 {!user && (
                   <a
-                    href="/choices"
+                    href="/login"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Faça login <span aria-hidden="true">&rarr;</span>
+                  </a>
+                )}
+              </div>
+              <div className="py-6">
+                {!user && (
+                  <a
+                    href="/choices"
+                    className="-mx-3 block rounded-lg px-3 py-2.5 text-center text-sm font-semibold leading-7 text-gray-100 bg-indigo-600"
+                  >
+                    Registre-se
                   </a>
                 )}
               </div>

@@ -75,7 +75,7 @@ export function Searchbar() {
 
   return (
       <div ref={searchRef}>
-      <div className="relative z-0 flex justify-center px-4 py-2 border-b">
+      <div className="relative flex justify-center px-4 py-2 border-b">
         <div className="w-full max-w-md">
           <label htmlFor="search" className="sr-only">
             Search
@@ -87,7 +87,7 @@ export function Searchbar() {
             <input
               id="search"
               name="search"
-              className="block w-full rounded-md border bg-white py-2 pl-10 pr-3 text-gray-900 placeholder:text-gray-500 focus:ring-2 focus:ring-indigo-600 sm:text-sm"
+              className="block w-full rounded-md border-gray-200 bg-white py-2 pl-10 pr-3 text-gray-900 placeholder:text-gray-500 focus:ring-2 focus:ring-indigo-600 sm:text-sm"
               placeholder="Pesquise por empresa, CNPJ ou site"
               type="search"
               autoComplete="off"
@@ -106,7 +106,7 @@ export function Searchbar() {
           <div className="bg-white shadow-lg">
             {/* Título para as sugestões de empresas */}
             <h3 className="text-center font-semibold py-4">Confira as empresas mais pesquisadas</h3>
-            <div className="flex overflow-x-auto space-x-4 p-4 justify-center">
+            <div className="flex overflow-x-auto space-x-4 p-8 justify-center">
               {/* Adiciona padding nas laterais para centralizar os cards */}
               <div className="w-full max-w-4xl px-8">
                 <div className="flex space-x-4">
