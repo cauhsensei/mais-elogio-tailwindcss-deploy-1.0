@@ -105,8 +105,8 @@ export function Searchbar() {
         <div className="fixed inset-x-0 z-50">
           <div className="bg-white shadow-lg">
             {/* Título para as sugestões de empresas */}
-            <h3 className="text-center font-semibold py-4">Confira as empresas mais pesquisadas</h3>
-            <div className="flex overflow-x-auto space-x-4 p-8 justify-center">
+            <h3 className="text-center font-semibold py-6">Confira as empresas mais pesquisadas</h3>
+            <div className="flex overflow-x-auto space-x-4 p-12 justify-center">
               {/* Adiciona padding nas laterais para centralizar os cards */}
               <div className="w-full max-w-4xl px-8">
                 <div className="flex space-x-4">
@@ -115,7 +115,7 @@ export function Searchbar() {
                     onClick={(e) => handleCardClick(e, company.uid)}
                     className="flex-none w-36 rounded-lg bg-gray-100 p-4 hover:bg-gray-200 cursor-pointer">
                         {company.iconUrl ? (
-                          <Image src={company.iconUrl} alt="" width={30} height={30} className="mx-auto rounded-full object-cover" />
+                          <Image src={company.iconUrl} alt="" width={36} height={36} className="mx-auto rounded-full object-cover" />
                         ) : (
                           <UserCircleIcon className="h-12 w-12 mx-auto text-gray-400" aria-hidden="true" />
                         )}
