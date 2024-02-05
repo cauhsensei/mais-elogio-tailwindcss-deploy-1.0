@@ -24,7 +24,10 @@ export async function GET(request) {
     const responseData = {
       email: data.email,
       nome: data.nome, // Nome oficial da empresa
-      fantasia: data.fantasia // Nome fantasia da empresa
+      fantasia: data.fantasia, // Nome fantasia da empresa
+      telefone: data.telefone, // Telefone da empresa
+      atividadePrincipal: data.atividade_principal[0]?.text, // Atividade principal
+      situacao: data.situacao // Situação da empresa
     };
 
     return new Response(JSON.stringify(responseData), {

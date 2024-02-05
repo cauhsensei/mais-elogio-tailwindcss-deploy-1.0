@@ -25,11 +25,15 @@ export default function useAuthentication() {
         try {
             const authResult = await createUserWithEmailAndPassword(auth, userData.email, userData.password);
             
+            // Dados adicionais para empresa
+            const additionalData = userData.additionalData || {};
+            
             // Verifica se é um registro de empresa ou usuário e ajusta os campos apropriadamente
             const newUser = {
-                uid: authResult.user.uid,
-                email: userData.email,
-                isCompany: userData.isCompany
+            uid: authResult.user.uid,
+            email: userData.email,
+            isCompany: userData.isCompany,
+            ...additionalData // Adiciona dados adicionais para empresa
             };
 
             if (userData.isCompany) {
